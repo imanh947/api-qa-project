@@ -25,6 +25,17 @@ This project demonstrates API testing for authentication using Postman and Newma
    `npm install -g newman`
    #### Run the test
    `newman run collection/auth_collection.json -e environment/dev_environment.json`
+3. Create HTML report
+   #### Install HTML report plugin
+   `npm install -g newman-reporter-htmlextra`
+   #### Go to your project root
+   `cd api-qa-auth-project`
+   #### Create the report
+   `newman run collection/auth_collection.json \
+    -e environment/dev_environment.json \
+    -r htmlextra`
+
+
 
 ## Author
 
